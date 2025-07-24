@@ -1,17 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Greeting from './Greeting';
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Greeting from "./Greeting";
 function App() {
-  const [count, setCount] = useState(0)
- 
+  const [count, setCount] = useState(0);
+  const [userData, setUserData] = useState("JJJ");
+
+  let countVar = 10;
+
+  const update = (val) => {
+    setCount(val)
+  }
+
   return (
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
+        <p>count vat : {countVar}</p>
+        <button
+          onClick={() => {
+            countVar = 20;
+          }}
+        >
+          update
+        </button>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
@@ -33,12 +48,11 @@ function App() {
 
       <h3>testing 1</h3>
 
-      <Greeting name="Janvi"  />
+      <Greeting name="Janvi" count={count} update={update}/>
 
       <Greeting name="Priyanka" />
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
