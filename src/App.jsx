@@ -1,56 +1,52 @@
-import { useState } from "react";
+
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import Greeting from "./Greeting";
+import Country from "./Component/Acountry/COUNTRY.JSX";
+import Funcountry from "./Component/Bfuncountry/Funcountry";
+import PasswordToggle from "./Component/C_fun_password/PasswordToggle";
+import Counter from "./Component/E_Counter_Plus_Minus/Counter";
+import TodoItem from "./Component/F_Todo_Item/TodoItem";
+import Course from "./Component/G_Course/Course.";
+import TodoPrac from "./Component/H_Prac_Todo/TodoPrac";
+import TodoShow from "./Component/F1_TodoItem/TodoShow";
+
+import Itemcomponent from "./Component/Itemcomponent7_new/Itemcomponent";
+import FullFormValidationPra from "./Component/FullFormValidationPra/FullFormValidationPra";
+import AgeEmailPasswordVali from "./Component/AgeEmailPassword/AgeEmailPasswordVali";
+import AgeEmail from "./Component/AgeEmail9/AgeEmail";
+
+
 function App() {
-  const [count, setCount] = useState(0);
-  const [userData, setUserData] = useState("JJJ");
 
-  let countVar = 10;
-
-  const update = (val) => {
-    setCount(val)
-  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <p>count vat : {countVar}</p>
-        <button
-          onClick={() => {
-            countVar = 20;
-          }}
-        >
-          update
-        </button>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     {/* <Country/>
+      <Funcountry/> */}
+     {/* <PasswordToggle/> */}
+     {/* <Counter/> */}
+     {/* <TodoItem/>  */}
 
-      <h2>testing</h2>
+     {/* <Course/>  */}
 
-      <h3>testing 1</h3>
+     {/* <TodoPrac/>   */}
 
-      <Greeting name="Janvi" count={count} update={update}/>
+    {/* <TodoShow/>  */}
 
-      <Greeting name="Priyanka" />
+    {/* <AgeEmail/>  */}
+
+    {/* <Itemcomponent/>  */}
+
+    {/* <FullFormValidationPra/>  */}
+
+  
+
+    {/* <AgeEmailPasswordVali/> */}
+
+    {/* <AgeEmail/>  */}
+
+
     </>
   );
 }
