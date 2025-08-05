@@ -14,7 +14,11 @@ import TodoShow from "./Component/F1_TodoItem/TodoShow";
 import Itemcomponent from "./Component/Itemcomponent7_new/Itemcomponent";
 import FullFormValidationPra from "./Component/FullFormValidationPra/FullFormValidationPra";
 import AgeEmailPasswordVali from "./Component/AgeEmailPassword/AgeEmailPasswordVali";
-import AgeEmail from "./Component/AgeEmail9/AgeEmail";
+// import AgeEmail from "./Component/AgeEmail9/AgeEmail"; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from "./Component/Products_05_08/Products";
+
+
 
 
 function App() {
@@ -45,6 +49,8 @@ function App() {
     {/* <AgeEmailPasswordVali/> */}
 
     {/* <AgeEmail/>  */}
+
+    <Products/>
 
 
     </>
